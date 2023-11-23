@@ -1,0 +1,13 @@
+classes:
+  - class-name: Bikram hot yoga
+    description: lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi distinctio fugit explicabo maiores ex exercitationem minus animi numquam et, aut voluptas alias modi perferendis, magnam fugiat dicta soluta rem amet. Eligendi distinctio fugit explicabo maiores ex exercitationem minus animi numquam et, 
+    image: /assets/images/website-yoga-images/jempinis-12-14.jpg
+  - class-name: Mandala yoga
+    description: lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi distinctio fugit explicabo maiores ex exercitationem minus animi numquam et, aut voluptas alias modi perferendis, magnam fugiat dicta soluta rem amet. Eligendi distinctio fugit 
+    image: /assets/images/website-yoga-images/jempinis-12-3.jpg
+  - class-name: Chakra flow
+    description: lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi distinctio fugit explicabo maiores ex exercitationem minus animi numquam et, aut voluptas alias modi perferendis, magnam fugiat dicta soluta rem amet. Eligendi distinctio fugit 
+    image: /assets/images/website-yoga-images/jempinis-12-13.jpg
+  - class-name: Vinyasa flow
+    description: lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi distinctio fugit explicabo maiores ex exercitationem minus animi numquam et, aut voluptas 
+    image: /assets/images/website-yoga-images/jempinis-12-1.jpg

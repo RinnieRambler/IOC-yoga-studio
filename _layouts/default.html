@@ -13,9 +13,12 @@
 </head>
 <body class="bg-[#FBF2E9] text-[#C97324]">
 
+    {% if page.full-banner=="true" %}
+
+    <!---------Full banner -->
     <header class="text-[#C97324] min-h-100">
-        <div style="background-image:url({{page.featured-image}})" class="bg-cover bg-center bg-no-repeat py-2p px-5p min-h-100">
-            <div class="flex justify-between mb-16">  
+        <div style="background-image:url({{page.featured-image}})" class="bg-cover bg-center bg-no-repeat min-h-100">
+            <div class="flex justify-between px-5p py-16 mb-8">  
                 <div>
                     <a href="/index.html" class="flex items-center">The Yoga Studio</a>
                 </div>
@@ -26,19 +29,22 @@
                 </div>
             </div> 
             <div class="w-50">
-                <div class="border-2 border-current"></div>
-                <h4>{{page.pre-title}}</h4>
-                <h1>{{page.title}}</h1>
+                <div class="border-2 border-current w-[24%] mb-10"></div>
+                <div class=" py-2p px-5p">
+                    <h4>{{page.pre-title}}</h4>
+                    <h1>{{page.title}}</h1>
+                </div>
             </div>
         </div>
     </header>
 
+    {% else %}
     
-
+    <!--------Half banner ------->
     <header class="text-[#C97324] min-h-100 relative">
-        <div class="pt-2p pl-5p">
-            <div class="flex justify-between mb-16">  
-                <div>
+        <div class=" ">
+            <div class="flex justify-between py-16 px-5p absolute w-full">  
+                <div class="">
                     <a href="/index.html" class="flex items-center">The Yoga Studio</a>
                 </div>
                 <div class="flex items-center  space-x-8">
@@ -48,41 +54,20 @@
                 </div>
             </div> 
             <div class="grid grid-cols-3">
-                <div class="">
-                    <div class="border-2 border-current"></div>
-                    <h4>{{page.pre-title}}</h4>
-                    <h1>{{page.title}}</h1>
+                <div class="self-center">
+                    <div class="border-2 border-current w-[50%] mb-10"></div>
+                    <div class="pl-5p relative left-10 w-screen">
+                        <h4>{{page.pre-title}}</h4>
+                        <h1>{{page.title}}</h1>
+                    </div>
                 </div>
                 <div style="background-image:url({{page.featured-image}})" class="bg-cover bg-center bg-no-repeat col-span-2 min-h-100"></div>
             </div>
         </div>
     </header>
 
-    <header class="text-[#C97324] min-h-100 relative">
-        <div class="pt-2p pl-5p">
-            <div class="flex justify-between mb-16">  
-                <div>
-                    <a href="/index.html" class="flex items-center">The Yoga Studio</a>
-                </div>
-                <div class="flex items-center  space-x-8">
-                        <a href="/classes.html">Our classes</a>
-                        <a href="/schedule.html">Schedule</a>
-                        <a href="/contact.html">Contact</a>
-                </div>
-            </div> 
-        </div>
-    </header>
+    {% endif %}
 
-    <section >
-            <div style="background-image:url({{page.featured-image}})" class="bg-cover bg-center bg-no-repeat min-h-100" class="">
-                <div class="">
-                    <hr class="border-t-2 border-current -ml-96">
-                    <h4>{{page.pre-title}}</h4>
-                    <h1>{{page.title}}</h1>
-                </div>
-            </div>
-        </div>
-    </section>
 
     {{content}}
 
@@ -115,11 +100,12 @@
                     <a class="block">Sed do</a>
                 </nav>
             </div>
-            <div class="col-span-2">
-                <div class="">
+            <div class="col-span-2 flex justify-end">
+                <div class="text-right">
                     <h4>Subscribe to our newsletter</h4>
-                    <form>
+                    <form class="text-right">
                         <input class="w-full bg-[#C97324] text-[#FBF2E9] border border-current" type="email" id="email" name="email">
+                        
                         <input class="bg-[#FBF2E9] text-[#C97324] px-6 py-1 mt-5 ml-auto" type="submit" value="subscribe">
                     </form>
                 </div>

@@ -18,7 +18,7 @@ html {
 @layer base {
 
   h1, h2, h3, h4  {
-      @apply mb-[0.75em] mt-[0.25em];
+      @apply my-[0.75em];
   }
 
   h1 {
@@ -134,7 +134,27 @@ html {
   @apply bg-copper;
 }
 
-/* Border around class item */
-#momence-embed #momence-plugin-host-schedule .momence-host_schedule-session_list-item-type {
-  border: solid 2px [#C97324]];
+/* Border around items */
+
+body #momence-plugin-host-schedule .gfbZfI{
+border-color: #C97324;
+}
+
+body #momence-plugin-host-schedule .hkEhZv {
+  border-color: #C97324;
+}
+
+body #momence-plugin-host-schedule .kMrJkC {
+  border-color: #C97324;
+}
+
+/* Removal of timezone */
+body #momence-plugin-host-schedule .kSZlqf {
+  display:none;
+}
+
+/* Button style */
+body #momence-embed #momence-plugin-host-schedule .EenGE {
+  @apply bg-copper text-light;
+  
 }
