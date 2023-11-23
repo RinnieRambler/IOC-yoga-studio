@@ -6,7 +6,72 @@
     <title>Document</title>
     <link rel="stylesheet" href="/assets/css/style.css">
 </head>
-<body>
+<body class="bg-[#FBF2E9]">
+
+    <header class="text-[#C97324]">
+        <div style="background-image:url({{page.featured-image}})" class="bg-cover bg-center bg-no-repeat p-5p">
+            <div class="flex justify-between ">  
+                <div>
+                    <a href="#" class="flex items-center">The Yoga Studio</a>
+                </div>
+                <div class="flex items-center">
+                        <a href="#">Our classes</a>
+                        <a href="#">Schedule</a>
+                        <a href="#">Contact</a>
+                </div>
+            </div> 
+            <div class="">
+                <div class="border-2 border-current"></div>
+                <h2>{{page.pre-title}}</h2>
+                <h1>{{page.title}}</h1>
+            </div>
+        </div>
+    </header>
+
     {{content}}
+
+    <footer class="bg-[#C97324] text-[#FBF2E9]">
+        <div class="grid grid-cols-5 p-5p">
+            <div class="">
+                <h4>Lorem ipsum</h4>
+                <nav>
+                    <a class="block">Dolor sit amet</a>
+                    <a class="block">Consecteteur</a>
+                    <a class="block">Adipiscing elit</a>
+                    <a class="block">Sed do</a>
+                </nav>
+            </div>
+            <div>
+                <h4>Lorem ipsum</h4>
+                <nav>
+                    <a class="block">Dolor sit amet</a>
+                    <a class="block">Consecteteur</a>
+                    <a class="block">Adipiscing elit</a>
+                    <a class="block">Sed do</a>
+                </nav>
+            </div>
+            <div>
+                <h4>Lorem ipsum</h4>
+                <nav>
+                    <a class="block">Dolor sit amet</a>
+                    <a class="block">Consecteteur</a>
+                    <a class="block">Adipiscing elit</a>
+                    <a class="block">Sed do</a>
+                </nav>
+            </div>
+            <div class="col-span-2">
+                <div>
+                    <h4>Subscribe to our newsletter</h4>
+                    <form>
+                        <input class="w-full" type="email" id="email" name="email">
+                        <input class="bg-[#FBF2E9] rounded-full text-[#C97324] px-6 py-1 mt-5 ml-auto" type="submit" value="subscribe">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="px-5p py-2p border-t">
+            <a href="#">Terms of use</a>
+        </div>
+    </footer>
 </body>
 </html>
