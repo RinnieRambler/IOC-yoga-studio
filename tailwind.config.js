@@ -23,11 +23,9 @@ module.exports = {
       '9xl': ['8rem', '1'],
     },
     fontFamily: {
-      'sans': ['proxima-nova', 'ui-sans-serif'],
-      'sans-tight': ['proxima-nova-condensed', 'ui-sans-serif'],
-      'mono': ['Inconsolata', 'ui-mono', 'monospace'],
-      'soft': ['proxima-soft', 'ui-sans-serif'],
-      'soft-tight': ['proxima-soft-condensed', 'ui-sans-serif'],
+      'sans': ['poppins', 'ui-sans-serif'],
+      'serif': ['oranienbaum', 'ui-serif'],
+      'geom': ['Montserrat','ui-sans-serif'],
     },
     extend: {
       lineHeight: {

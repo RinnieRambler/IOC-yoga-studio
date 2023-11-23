@@ -12,3 +12,35 @@
 html {
   scroll-behavior: smooth; /* this enables smooth scrolling between internal links */
 }
+
+/* ---------Default Styles to apply to whole project ------------ */
+
+@layer base {
+
+  h1, h2, h3, h4  {
+      @apply my-[0.75em];
+  }
+
+  h1 {
+      @apply text-9xl leading-tight font-serif;
+  }
+  h2 {
+      @apply text-6xl leading-tight font-serif;
+  }
+  h3 {
+      @apply text-2xl leading-tight font-serif;
+  }
+
+  h4 {
+      @apply text-lg uppercase leading-tight font-sans;
+  }
+
+  p {
+      @apply mb-[0.5em] leading-normal font-geom;
+  }
+
+  a {
+      @apply font-sans uppercase;
+  }
+
+}
