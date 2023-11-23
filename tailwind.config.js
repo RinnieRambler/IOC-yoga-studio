@@ -27,6 +27,12 @@ module.exports = {
       'serif': ['oranienbaum', 'ui-serif'],
       'geom': ['Montserrat','ui-sans-serif'],
     },
+    colors: {
+      copper: '#C97324',
+      light: '#FBF2E9',
+      dark: '#262626',
+      // ...
+    },
     extend: {
       lineHeight: {
         'tight': '.85',

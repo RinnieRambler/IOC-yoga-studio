@@ -14,7 +14,7 @@
   box-sizing: border-box; /* 1 */
   border-width: 0; /* 2 */
   border-style: solid; /* 2 */
-  border-color: #e5e7eb; /* 2 */
+  border-color: currentColor; /* 2 */
 }
 ::before,
 ::after {
@@ -313,8 +313,8 @@ video {
   display: none;
 }
 h1, h2, h3, h4 {
-  margin-top: 0.75em;
   margin-bottom: 0.75em;
+  margin-top: 0.25em;
 }
 h1 {
   font-family: oranienbaum, ui-serif;
@@ -438,11 +438,17 @@ a {
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
+.relative {
+  position: relative;
+}
 .col-span-2 {
   grid-column: span 2 / span 2;
 }
 .m-2p {
   margin: 2%;
+}
+.-m-24 {
+  margin: -6rem;
 }
 .mx-auto {
   margin-left: auto;
@@ -462,6 +468,12 @@ a {
 }
 .mb-5 {
   margin-bottom: 1.25rem;
+}
+.-ml-24 {
+  margin-left: -6rem;
+}
+.-ml-96 {
+  margin-left: -24rem;
 }
 .block {
   display: block;
@@ -525,8 +537,8 @@ a {
 .border-t {
   border-top-width: 1px;
 }
-.border-current {
-  border-color: currentColor;
+.border-t-2 {
+  border-top-width: 2px;
 }
 .border-\[\#C97324\] {
   --tw-border-opacity: 1;
@@ -638,3 +650,100 @@ html {
 }
 
 /* ---------Default Styles to apply to whole project ------------ */
+
+
+/* Put this outside of the tailwind components in the style.css */
+
+/* Background  */
+#momence-embed #momence-plugin-host-schedule .momence-host_schedule {
+  --tw-bg-opacity: 1;
+  background-color: rgb(251 242 233 / var(--tw-bg-opacity));
+}
+
+/* Background  */
+#momence-embed #momence-plugin-host-schedule * {
+  border-radius: 0px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(251 242 233 / var(--tw-bg-opacity));
+  font-family: poppins, ui-sans-serif;
+  font-weight: 300;
+  --tw-text-opacity: 1;
+  color: rgb(201 115 36 / var(--tw-text-opacity));
+}
+
+/* Styling the headings  */
+#momence-embed #momence-plugin-host-schedule h4 {
+  font-family: oranienbaum, ui-serif;
+  --tw-text-opacity: 1;
+  color: rgb(201 115 36 / var(--tw-text-opacity));
+}
+
+
+/* Hide the class type text above the class title */
+#momence-embed #momence-plugin-host-schedule .momence-host_schedule-session_list-item-type {
+  display: none;
+}
+
+/* Hide featured image */
+#momence-embed #momence-plugin-host-schedule .jDJBAl,
+#momence-embed #momence-plugin-host-schedule .momence-host_schedule-session_list-item-image {
+  display: none;
+}
+
+/* Teacher Name & Bio */
+#momence-embed #momence-plugin-host-schedule .momence-session-teacher {
+  display: none;
+}
+
+/* Style the featured button  */
+#momence-embed #momence-plugin-host-schedule .momence-host_schedule-session_list-item-booked_button {
+  display: inline-block;
+  white-space: nowrap;
+  border-radius: 0px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(201 115 36 / var(--tw-bg-opacity));
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+  --tw-text-opacity: 1;
+  color: rgb(251 242 233 / var(--tw-text-opacity));
+}
+
+/* Remove the border from the arrows left and right at the top  */
+#momence-embed #momence-plugin-host-schedule .momence-arrow-button {
+  border-style: none;
+}
+
+/* Add more space below the first row  */
+#momence-embed #momence-plugin-host-schedule .momence-host_schedule-first_row {
+  padding-bottom: 1rem;
+}
+
+
+/* Add more space below the first row  */
+#momence-embed #momence-plugin-host-schedule .momence-event_type_select-button {
+  pointer-events: none;
+  font-family: oranienbaum, ui-serif;
+  font-size: 1.5rem;
+  line-height: 1.2;
+}
+
+/* Hide powered by momence */
+
+#momence-embed #momence-plugin-host-schedule .momence-host_schedule-powered_by_momence {
+  display: none;
+}
+
+/* Styling the lines under the list of pages */
+#momence-embed #momence-plugin-host-schedule .gZOyVg::after {
+  --tw-bg-opacity: 1;
+  background-color: rgb(201 115 36 / var(--tw-bg-opacity));
+}
+
+/* Border around class item */
+#momence-embed #momence-plugin-host-schedule .momence-host_schedule-session_list-item-type {
+  border: solid 2px [#C97324]];
+}
