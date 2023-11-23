@@ -448,6 +448,12 @@ a {
   margin-left: auto;
   margin-right: auto;
 }
+.mb-5p {
+  margin-bottom: 5%;
+}
+.mb-16 {
+  margin-bottom: 4rem;
+}
 .mt-5 {
   margin-top: 1.25rem;
 }
@@ -456,18 +462,6 @@ a {
 }
 .mb-5 {
   margin-bottom: 1.25rem;
-}
-.mb-10 {
-  margin-bottom: 2.5rem;
-}
-.mb-16 {
-  margin-bottom: 4rem;
-}
-.mt-2p {
-  margin-top: 2%;
-}
-.mb-5p {
-  margin-bottom: 5%;
 }
 .block {
   display: block;
@@ -481,11 +475,14 @@ a {
 .aspect-square {
   aspect-ratio: 1 / 1;
 }
-.min-h-90 {
-  min-height: 90vh;
-}
 .min-h-80 {
   min-height: 80vh;
+}
+.min-h-100 {
+  min-height: 100vh;
+}
+.min-h-90 {
+  min-height: 90vh;
 }
 .w-full {
   width: 100%;
@@ -514,18 +511,10 @@ a {
 .gap-4 {
   gap: 1rem;
 }
-.space-x-6 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(1.5rem * var(--tw-space-x-reverse));
-  margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
-}
 .space-x-8 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(2rem * var(--tw-space-x-reverse));
   margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));
-}
-.rounded-full {
-  border-radius: 9999px;
 }
 .border {
   border-width: 1px;
@@ -536,12 +525,12 @@ a {
 .border-t {
   border-top-width: 1px;
 }
+.border-current {
+  border-color: currentColor;
+}
 .border-\[\#C97324\] {
   --tw-border-opacity: 1;
   border-color: rgb(201 115 36 / var(--tw-border-opacity));
-}
-.border-current {
-  border-color: currentColor;
 }
 .bg-\[\#C97324\] {
   --tw-bg-opacity: 1;
@@ -551,17 +540,14 @@ a {
   --tw-bg-opacity: 1;
   background-color: rgb(251 242 233 / var(--tw-bg-opacity));
 }
-.bg-\[FBF2E9\] {
-  background-color: FBF2E9;
-}
 .bg-cover {
   background-size: cover;
 }
-.bg-top {
-  background-position: top;
-}
 .bg-center {
   background-position: center;
+}
+.bg-top {
+  background-position: top;
 }
 .bg-no-repeat {
   background-repeat: no-repeat;
@@ -570,11 +556,15 @@ a {
   -o-object-fit: cover;
      object-fit: cover;
 }
+.p-2p {
+  padding: 2%;
+}
 .p-5p {
   padding: 5%;
 }
-.p-2p {
-  padding: 2%;
+.px-5p {
+  padding-left: 5%;
+  padding-right: 5%;
 }
 .px-8 {
   padding-left: 2rem;
@@ -584,6 +574,10 @@ a {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
+.px-2p {
+  padding-left: 2%;
+  padding-right: 2%;
+}
 .py-5 {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
@@ -592,6 +586,10 @@ a {
   padding-top: 5%;
   padding-bottom: 5%;
 }
+.py-2p {
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
 .px-6 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
@@ -599,14 +597,6 @@ a {
 .py-1 {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
-}
-.px-5p {
-  padding-left: 5%;
-  padding-right: 5%;
-}
-.py-2p {
-  padding-top: 2%;
-  padding-bottom: 2%;
 }
 .px-2 {
   padding-left: 0.5rem;
@@ -619,6 +609,15 @@ a {
 .px-10 {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
+}
+.pt-5p {
+  padding-top: 5%;
+}
+.pt-2p {
+  padding-top: 2%;
+}
+.pl-5p {
+  padding-left: 5%;
 }
 .text-center {
   text-align: center;
