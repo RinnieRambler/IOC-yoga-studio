@@ -31,7 +31,11 @@ module.exports = {
       copper: '#C97324',
       light: '#FBF2E9',
       dark: '#262626',
-      // ...
+    },
+    backgroundPosition: {
+      'bottom-4': 'center bottom 1rem',
+      'top-4': 'center top 1rem',
+      dark: '#262626',
     },
     extend: {
       lineHeight: {

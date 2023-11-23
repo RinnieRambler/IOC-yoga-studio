@@ -447,6 +447,12 @@ a {
 .left-10 {
   left: 2.5rem;
 }
+.bottom-4 {
+  bottom: 1rem;
+}
+.top-4 {
+  top: 1rem;
+}
 .col-span-2 {
   grid-column: span 2 / span 2;
 }
@@ -496,17 +502,17 @@ a {
 .min-h-90 {
   min-height: 90vh;
 }
-.w-\[50\%\] {
-  width: 50%;
+.w-\[24\%\] {
+  width: 24%;
 }
 .w-full {
   width: 100%;
 }
+.w-\[50\%\] {
+  width: 50%;
+}
 .w-screen {
   width: 100vw;
-}
-.w-\[24\%\] {
-  width: 24%;
 }
 .shrink-0 {
   flex-shrink: 0;
@@ -579,11 +585,11 @@ a {
 .bg-cover {
   background-size: cover;
 }
-.bg-center {
-  background-position: center;
+.bg-bottom-4 {
+  background-position: center bottom 1rem;
 }
-.bg-top {
-  background-position: top;
+.bg-top-4 {
+  background-position: center top 1rem;
 }
 .bg-no-repeat {
   background-repeat: no-repeat;
@@ -656,11 +662,27 @@ a {
 .pl-5p {
   padding-left: 5%;
 }
+.pb-60 {
+  padding-bottom: 15rem;
+}
 .text-center {
   text-align: center;
 }
 .text-right {
   text-align: right;
+}
+.font-serif {
+  font-family: oranienbaum, ui-serif;
+}
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 1;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.capitalize {
+  text-transform: capitalize;
 }
 .text-\[\#FBF2E9\] {
   --tw-text-opacity: 1;
@@ -678,6 +700,7 @@ html {
 }
 
 /* ---------Default Styles to apply to whole project ------------ */
+
 
 
 /* Put this outside of the tailwind components in the style.css */
