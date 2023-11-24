@@ -9,7 +9,7 @@ banner-position: 50% 65%
 
 <!------- form section --------->
 
-<section class="p-5p">
+<section class="p-5p border-b-8">
     <div class="grid grid-cols-3">
         <div></div>
         <form class="col-span-2">
@@ -29,7 +29,7 @@ banner-position: 50% 65%
 <section class="p-5p border border-copper">
     {% for item in site.data.faq %}
     <div class="px-5p">
-      <button class="expandButton flex justify-between w-full bg-light border-copper border-1 p-8" data-target-button="{{forloop.index}}"><h4 class="text-left text-copper">Q. {{item.question}}</h4></button>
+      <button class="expandButton flex justify-between w-full bg-light border-copper border-1 p-8" data-target-button="{{forloop.index}}"><h4 class="text-left text-copper">Q. {{item.question}}</h4><span class="text-2xl">+</span></button>
       <div class="expandable hidden" data-target-more="{{forloop.index}}"><p class="text-light bg-copper p-8">A. {{item.answer}}</p>
       </div>
     </div>

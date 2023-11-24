@@ -66,6 +66,17 @@ html {
     @apply bg-[#C97324];
   }
 }
+ body .slick-next:before, body .slick-prev:before {
+ @apply text-copper
+}
+
+.expandButton span {
+  transition: all 3s;
+}
+
+.expandButton.active span{
+  transform: rotate(45deg);
+}
 
 
 

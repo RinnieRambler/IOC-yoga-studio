@@ -459,17 +459,20 @@ a {
   --tw-bg-opacity: 1;
   background-color: rgb(201 115 36 / var(--tw-bg-opacity));
 }
-.collapse {
-  visibility: collapse;
-}
 .absolute {
   position: absolute;
 }
 .relative {
   position: relative;
 }
+.sticky {
+  position: sticky;
+}
 .left-10 {
   left: 2.5rem;
+}
+.top-0 {
+  top: 0px;
 }
 .bottom-4 {
   bottom: 1rem;
@@ -482,6 +485,9 @@ a {
 }
 .m-2p {
   margin: 2%;
+}
+.m-4 {
+  margin: 1rem;
 }
 .mx-auto {
   margin-left: auto;
@@ -559,6 +565,9 @@ a {
 .flex-nowrap {
   flex-wrap: nowrap;
 }
+.items-start {
+  align-items: flex-start;
+}
 .items-end {
   align-items: flex-end;
 }
@@ -597,6 +606,9 @@ a {
 .border-t {
   border-top-width: 1px;
 }
+.border-b-8 {
+  border-bottom-width: 8px;
+}
 .border-\[\#C97324\] {
   --tw-border-opacity: 1;
   border-color: rgb(201 115 36 / var(--tw-border-opacity));
@@ -623,6 +635,18 @@ a {
 }
 .bg-cover {
   background-size: cover;
+}
+.bg-\[40\%_50\%\] {
+  background-position: 40% 50%;
+}
+.bg-\[30\%_50\%\] {
+  background-position: 30% 50%;
+}
+.bg-\[50\%_50\%\] {
+  background-position: 50% 50%;
+}
+.bg-\[650\%_50\%\] {
+  background-position: 650% 50%;
 }
 .bg-no-repeat {
   background-repeat: no-repeat;
@@ -714,6 +738,10 @@ a {
   font-size: 2.25rem;
   line-height: 1;
 }
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 1.2;
+}
 .uppercase {
   text-transform: uppercase;
 }
@@ -744,6 +772,18 @@ html {
 }
 
 /* ---------Default Styles to apply to whole project ------------ */
+ body .slick-next:before, body .slick-prev:before {
+  --tw-text-opacity: 1;
+  color: rgb(201 115 36 / var(--tw-text-opacity));
+}
+
+.expandButton span {
+  transition: all 3s;
+}
+
+.expandButton.active span{
+  transform: rotate(45deg);
+}
 
 
 

@@ -1,15 +1,22 @@
 <section>
     <div class="p-5p">
         <h2 class="py-5">Testimonials</h2>
-        <div class="grid grid-cols-3 gap-4 text-center">
+        <div class="slider text-center">
+        {% for item in site.data.testimonials %}
+        <div class="m-4">
             <div class="py-5p">
-                <img src="/assets/images/website-yoga-images/jempinis-12-10.jpg"  class="aspect-square object-cover border border-current">
+                <div><img src="{{item.image}}"  class="aspect-square object-cover border border-current"></div>
                 <div>
-                    <h3>Duis Aute</h4>
-                    <p class="border-t border-current pt-5p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus saepe minima placeat beatae vitae culpa aut itaque tenetur tempora atque, inventore aliquid velit veniam molestias iste iure? Omnis, iusto nam!</p>
+                    <h3>{{item.name}}</h4>
+                    <p class="border-t border-current pt-5p">{{item.testimonial}}</p>
                 </div>
             </div>
-            <div class="py-5p">
+        </div>
+        {% endfor %}
+        </div>
+    </div>
+</section>
+            <!-- <div class="py-5p">
                 <img src="/assets/images/website-yoga-images/jempinis-12-11.jpg" class="aspect-square object-cover border border-current">
                 <h3>Duis Aute</h4>
                 <p class="border-t border-current pt-5p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus saepe minima placeat beatae vitae culpa aut itaque tenetur tempora atque, inventore aliquid velit veniam molestias iste iure? Omnis, iusto nam!</p>
@@ -18,7 +25,5 @@
                 <img src="/assets/images/website-yoga-images/jempinis-12-12.jpg" class="aspect-square object-cover border border-current ">
                 <h3>Duis Aute</h4>
                 <p class="border-t border-current pt-5p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus saepe minima placeat beatae vitae culpa aut itaque tenetur tempora atque, inventore aliquid velit veniam molestias iste iure? Omnis, iusto nam!</p>
-            </div>
-        </div>
-    </div>
-</section>
+            </div> -->
+      
