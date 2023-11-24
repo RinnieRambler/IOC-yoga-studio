@@ -438,6 +438,30 @@ a {
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
+.text-light {
+  --tw-text-opacity: 1;
+  color: rgb(251 242 233 / var(--tw-text-opacity));
+}
+.bg-light {
+  --tw-bg-opacity: 1;
+  background-color: rgb(251 242 233 / var(--tw-bg-opacity));
+}
+.text-copper {
+  --tw-text-opacity: 1;
+  color: rgb(201 115 36 / var(--tw-text-opacity));
+}
+.border-copper {
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(201 115 36 / var(--tw-border-opacity));
+}
+.bg-copper {
+  --tw-bg-opacity: 1;
+  background-color: rgb(201 115 36 / var(--tw-bg-opacity));
+}
+.collapse {
+  visibility: collapse;
+}
 .absolute {
   position: absolute;
 }
@@ -489,6 +513,9 @@ a {
 }
 .grid {
   display: grid;
+}
+.hidden {
+  display: none;
 }
 .aspect-square {
   aspect-ratio: 1 / 1;
@@ -574,6 +601,10 @@ a {
   --tw-border-opacity: 1;
   border-color: rgb(201 115 36 / var(--tw-border-opacity));
 }
+.border-copper {
+  --tw-border-opacity: 1;
+  border-color: rgb(201 115 36 / var(--tw-border-opacity));
+}
 .bg-\[\#C97324\] {
   --tw-bg-opacity: 1;
   background-color: rgb(201 115 36 / var(--tw-bg-opacity));
@@ -582,14 +613,16 @@ a {
   --tw-bg-opacity: 1;
   background-color: rgb(251 242 233 / var(--tw-bg-opacity));
 }
+.bg-light {
+  --tw-bg-opacity: 1;
+  background-color: rgb(251 242 233 / var(--tw-bg-opacity));
+}
+.bg-copper {
+  --tw-bg-opacity: 1;
+  background-color: rgb(201 115 36 / var(--tw-bg-opacity));
+}
 .bg-cover {
   background-size: cover;
-}
-.bg-bottom-4 {
-  background-position: center bottom 1rem;
-}
-.bg-top-4 {
-  background-position: center top 1rem;
 }
 .bg-no-repeat {
   background-repeat: no-repeat;
@@ -603,6 +636,9 @@ a {
 }
 .p-5p {
   padding: 5%;
+}
+.p-8 {
+  padding: 2rem;
 }
 .px-5p {
   padding-left: 5%;
@@ -662,8 +698,8 @@ a {
 .pl-5p {
   padding-left: 5%;
 }
-.pb-60 {
-  padding-bottom: 15rem;
+.text-left {
+  text-align: left;
 }
 .text-center {
   text-align: center;
@@ -691,6 +727,14 @@ a {
 .text-\[\#C97324\] {
   --tw-text-opacity: 1;
   color: rgb(201 115 36 / var(--tw-text-opacity));
+}
+.text-copper {
+  --tw-text-opacity: 1;
+  color: rgb(201 115 36 / var(--tw-text-opacity));
+}
+.text-light {
+  --tw-text-opacity: 1;
+  color: rgb(251 242 233 / var(--tw-text-opacity));
 }
 
 /* Custom CSS */
