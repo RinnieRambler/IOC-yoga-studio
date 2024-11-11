@@ -636,17 +636,8 @@ a {
 .bg-cover {
   background-size: cover;
 }
-.bg-\[40\%_50\%\] {
-  background-position: 40% 50%;
-}
-.bg-\[30\%_50\%\] {
-  background-position: 30% 50%;
-}
-.bg-\[50\%_50\%\] {
-  background-position: 50% 50%;
-}
-.bg-\[650\%_50\%\] {
-  background-position: 650% 50%;
+.bg-\[65\%_50\%\] {
+  background-position: 65% 50%;
 }
 .bg-no-repeat {
   background-repeat: no-repeat;
