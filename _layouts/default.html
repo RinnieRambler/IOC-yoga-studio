@@ -20,6 +20,11 @@
 
 <body class="bg-[#FBF2E9] text-[#C97324]">
 
+    {% for block in page.blocks %}
+    <!--{{block._id}} -->
+        {% include /block/{{block._id}}.html %}
+    {% endfor %}
+
     {% if page.full-banner=="true" %}
 
     <!---------Full banner -->
